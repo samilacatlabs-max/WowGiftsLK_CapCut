@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | ZLIGGER</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            200: '#eaddd7',
+                            300: '#e0cec7',
+                            400: '#d2bab0',
+                            500: '#a18072',
+                            600: '#846358',
+                            700: '#43302b',
+                            800: '#261b18',
+                            900: '#1a110f',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased text-gray-800 bg-brand-50 selection:bg-brand-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="font-serif text-3xl font-bold tracking-tighter text-brand-900">
+                        ZLIGGER<span class="text-brand-500">.</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html"
+                        class="text-gray-900 hover:text-brand-600 font-medium transition-colors">Home</a>
+                    <a href="shop.html"
+                        class="text-gray-900 hover:text-brand-600 font-medium transition-colors">Shop</a>
+                    <a href="about.html" class="text-brand-600 font-bold transition-colors">About Us</a>
+                    <a href="contact.html"
+                        class="text-gray-900 hover:text-brand-600 font-medium transition-colors">Contact</a>
+                    <a href="shop.html"
+                        class="bg-brand-900 text-white px-5 py-2.5 rounded-full hover:bg-brand-700 transition-all shadow-md transform hover:scale-105">
+                        Order Now
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-900 hover:text-brand-600 focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html"
+                    class="block px-3 py-3 text-lg font-medium text-gray-900 rounded-md hover:bg-brand-50 hover:text-brand-600">Home</a>
+                <a href="shop.html"
+                    class="block px-3 py-3 text-lg font-medium text-gray-900 rounded-md hover:bg-brand-50 hover:text-brand-600">Shop</a>
+                <a href="about.html"
+                    class="block px-3 py-3 text-lg font-medium text-gray-900 rounded-md hover:bg-brand-50 hover:text-brand-600">About
+                    Us</a>
+                <a href="contact.html"
+                    class="block px-3 py-3 text-lg font-medium text-gray-900 rounded-md hover:bg-brand-50 hover:text-brand-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-20 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h1 class="text-5xl font-serif font-bold text-brand-900 mb-6 leading-tight">Crafting Memories,
+                        <br>One Gift at a Time.</h1>
+                    <p class="text-xl text-gray-600 leading-relaxed mb-8">
+                        At Zligger, we believe that the best gifts are the ones that tell a story. Whether it's a mug
+                        for your morning coffee or a wooden engraving that lasts a lifetime, we pour our heart into
+                        every creation.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="h-px bg-brand-300 flex-1"></div>
+                        <span class="text-brand-500 font-serif italic text-lg">Since 2024</span>
+                    </div>
+                </div>
+                <div class="hidden lg:block relative">
+                    <div
+                        class="absolute -top-10 -right-10 w-64 h-64 bg-brand-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob">
+                    </div>
+                    <div
+                        class="absolute -bottom-10 -left-10 w-64 h-64 bg-brand-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000">
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?q=80&w=800&auto=format&fit=crop"
+                        alt="Gift crafting"
+                        class="relative rounded-2xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-700">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Our Story -->
+    <section class="py-24 bg-brand-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-serif font-bold text-brand-900 mb-8">Our Vision</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                "Supiri" isn't just a word to us; it's a standard. We started Zligger with a simple mission: to provide
+                Sri Lankans with world-class, personalized gift items that rival international standards. From the
+                quality of our ceramic mugs to the precision of our laser engravings, every detail is checked to ensure
+                perfection.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-900 text-brand-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="col-span-1 md:col-span-1">
+                    <span class="font-serif text-3xl font-bold text-white">ZLIGGER<span
+                            class="text-brand-500">.</span></span>
+                    <p class="mt-4 text-brand-300/80 leading-relaxed">Bringing your memories to life with high-quality
+                        customized gifts.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="shop.html" class="hover:text-white transition-colors">Shop</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Products</h4>
+                    <ul class="space-y-3">
+                        <li><a href="shop.html?cat=mugs" class="hover:text-white transition-colors">Mug Prints</a></li>
+                        <li><a href="shop.html?cat=wood" class="hover:text-white transition-colors">Wooden Engraving</a>
+                        </li>
+                        <li><a href="shop.html?cat=frames" class="hover:text-white transition-colors">Photo Frames</a>
+                        </li>
+                        <li><a href="shop.html?cat=sublimation"
+                                class="hover:text-white transition-colors">Sublimation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                </path>
+                            </svg>
+                            <span>+94 77 123 4567</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span>hello@zligger.lk</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-brand-800 mt-16 pt-8 text-center text-brand-400/60 text-sm">
+                <p>&copy; 2026 ZLIGGER. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
